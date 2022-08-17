@@ -1,0 +1,43 @@
+.stack {
+	margin-top: 5em;
+	scroll-margin-top: 2em;
+
+	&__items {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__box {
+		width: 200px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 3em;
+		padding: 1em;
+		&__title {
+			margin-bottom: 1em;
+			text-align: center;
+			letter-spacing: 1px;
+			font-size: 2rem;
+			font-weight: 700;
+			color: #023e7d;
+		}
+
+		&__icon {
+			width: 150px;
+			height: 150px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.stack {
+		&__items {
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 3em;
+		}
+	}
+}

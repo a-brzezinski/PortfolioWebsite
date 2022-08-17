@@ -1,0 +1,100 @@
+.nav {
+	width: 100%;
+
+	&__burger {
+		position: fixed;
+		top: 0;
+		right: 0.1em;
+		font-size: 3.5rem;
+		padding: 5px;
+		color: $primary;
+		cursor: pointer;
+		border: none;
+		background: none;
+		z-index: 100;
+	}
+
+	&__name {
+		height: 4rem;
+		width: 100%;
+		font-size: 2rem;
+		color: $primary;
+		padding: 0.5em 0;
+		text-align: center;
+	}
+
+	&__list {
+		position: fixed;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		width: 100%;
+		list-style: none;
+		background-color: white;
+		translate: 100%;
+		transition: translate 0.5s;
+		z-index: 10;
+
+		&--active {
+			translate: 0%;
+		}
+
+		&__item {
+			position: relative;
+			text-align: center;
+			cursor: pointer;
+			padding: 3em;
+			
+			&__link {
+				color: black;
+				font-size: 2rem;
+				text-decoration: none;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.nav {
+		// position: fixed;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 5vh;
+
+		&__burger {
+			display: none;
+		}
+
+		&__list {
+			position: relative;
+			height: inherit;
+			translate: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			background: none;
+
+			&__item {
+				padding: 0.5em;
+
+				&::before {
+					position: absolute;
+					bottom: 0;
+					width: 10px;
+					height: 2px;
+					background-color: $primary;
+					content: '';
+					transition: 0.3s;
+				}
+
+				&:hover::before {
+					width: 50px;
+				}
+			}
+		}
+	}
+}

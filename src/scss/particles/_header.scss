@@ -1,0 +1,180 @@
+@import '../helpers/variables';
+
+.header {
+	height: 95vh;
+	width: 100%;
+	overflow: hidden;
+
+	&__content {
+		height: 100%;
+		position: relative;
+		margin-top: 4em;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__post {
+		padding: 2em;
+		height: 30%;
+		&__h1 {
+			font-size: 4rem;
+			color: $primary;
+			letter-spacing: 1px;
+		}
+
+		&__text {
+			margin-top: 0.1em;
+			font-weight: 300;
+			font-size: 3rem;
+			letter-spacing: 1px;
+		}
+		&__items {
+			margin-top: 0.3em;
+			font-size: 4rem;
+			transition: 1s;
+
+			&__git {
+				color: black;
+				cursor: #181717;
+
+				&:hover i {
+					transition: 1s ease-in-out;
+					transform: rotate(30deg) scale(1.2);
+				}
+			}
+
+			&__linked {
+				text-decoration: none;
+				color: #0a66c2;
+				cursor: pointer;
+
+				&:hover i {
+					transition: 1s;
+					transform: rotate(-30deg) scale(1.2);
+				}
+			}
+		}
+	}
+
+	&__icons {
+		position: relative;
+		height: 70%;
+
+		&__icon {
+			width: 50px;
+			height: 50px;
+		}
+	}
+}
+
+@mixin iconRight {
+	position: absolute;
+	animation: rotateRight 5s infinite linear;
+}
+@mixin iconLeft {
+	position: absolute;
+	animation: rotateLeft 6s infinite linear;
+}
+
+@keyframes rotateRight {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotateLeft {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+#css {
+	@include iconLeft();
+	top: 5%;
+	left: 10%;
+}
+
+#js {
+	@include iconLeft();
+	bottom: 20%;
+	right: 10%;
+	width: 70px;
+	height: 70px;
+}
+#react {
+	@include iconLeft();
+	bottom: 50%;
+	right: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+#mui {
+	@include iconLeft();
+	right: 30%;
+	bottom: 40%;
+}
+
+#styledcomponents {
+	@include iconRight();
+	left: 15%;
+	top: 50%;
+}
+
+#html5 {
+	@include iconRight();
+	right: 10%;
+	top: 10%;
+}
+
+#sass {
+	@include iconLeft();
+	right: 50%;
+	top: 15%;
+}
+
+#github {
+	@include iconRight();
+	bottom: 15%;
+	left: 15%;
+}
+
+#npm {
+	@include iconLeft();
+	right: 15%;
+	bottom: 60%;
+}
+
+@media (min-width: 768px) {
+	.header {
+		&__content {
+			flex-direction: row;
+		}
+
+		&__post {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 50%;
+			height: 100%;
+
+			&__h1 {
+				font-size: 6rem;
+			}
+
+			&__text {
+				font-size: 4rem;
+			}
+		}
+
+		&__icons {
+			width: 50%;
+			height: 100%;
+		}
+	}
+}
