@@ -51,7 +51,7 @@
           <img id="css" class="header__icons__icon" src="./src/img/icons/css.svg" alt="css icon">
           <img id="js" class="header__icons__icon" src="./src/img/icons/js.svg" alt="javascript icon">
           <img id="react" class="header__icons__icon" src="./src/img/icons/react.svg" alt="react icon">
-          <img id="mui" class="header__icons__icon" src="./src/img/icons/mui.svg" alt="mui icon">
+          <img id="mui" class="header__icons__icon" src="./src/img/icons/typescript.svg" alt="typescript icon">
           <img id="npm" class="header__icons__icon" src="./src/img/icons/npm.svg" alt="npm icon">
           <img id="sass" class="header__icons__icon" src="./src/img/icons/sass.svg" alt="sass icon">
           <img id="styledcomponents" class="header__icons__icon" src="./src/img/icons/styledcomponents.svg"
@@ -65,10 +65,10 @@
       <section class="about">
         <div class="about__content">
           <p class="about__content__heading">Cześć 👋 👀</p>
-          <p class="about__content__text">Nazywam się Adrian Brzeziński, półtora roku uczę się samodzielnie front-endu.
+          <p class="about__content__text">Nazywam się Adrian Brzeziński, od dwóch lat uczę się samodzielnie front-endu.
           </p>
-          <p class="about__content__text">Mam 22 lat, aktualnie pracuję w leasingach i posiadam długie doświadczenie w
-            pracy z klientem więc potrafię zrozumieć jego potrzeby.
+          <p class="about__content__text">Mam 22 lata, aktualnie pracuję w firmie leasingowej i studiuję Informatykę
+            specjalizację Data Science.
           </p>
           <p class="about__content__text">Uważam się za osobę kreatywną nie bojącą się wyzwań. Lubię poznawać coraz to
             nowsze technologie i nabywać nowe umiejętności. Cenię sobie pracę w grupie, ale również pracę indywidualną.
@@ -83,29 +83,42 @@
             <img class="stack__box__icon" src="./src/img/icons/react.svg" alt="react icon">
           </div>
           <div class="stack__box" data-aos="fade-down">
+            <p class="stack__box__title">TypeScript</p>
+            <img class="stack__box__icon" src="./src/img/icons/typescript.svg" alt="typescript icon">
+          </div>
+          <div class="stack__box" data-aos="fade-up">
             <p class="stack__box__title">JavaScript</p>
             <img class="stack__box__icon" src="./src/img/icons/js.svg" alt="javascript icon">
           </div>
+          <div class="stack__box" data-aos="fade-down">
+            <p class="stack__box__title">Redux Toolkit</p>
+            <img class="stack__box__icon" src="./src/img/icons/redux.svg" alt="redux toolkit icon">
+          </div>
           <div class="stack__box" data-aos="fade-up">
-            <p class="stack__box__title">SCSS</p>
-            <img class="stack__box__icon" src="./src/img/icons/sass.svg" alt="scss icon">
+            <p class="stack__box__title">Chakra UI</p>
+            <img class="stack__box__icon" src="./src/img/icons/chakra-ui.svg" alt="chakra ui icon">
           </div>
           <div class="stack__box" data-aos="fade-down">
-            <p class="stack__box__title">CSS</p>
-            <img class="stack__box__icon" src="./src/img/icons/css.svg" alt="css icon">
-          </div>
-          <div class="stack__box" data-aos="fade-up">
-            <p class="stack__box__title">HTML</p>
-            <img class="stack__box__icon" src="./src/img/icons/html5.svg" alt="html icon">
-          </div>
-          <div class="stack__box" data-aos="fade-down">
-            <p class="stack__box__title">Material UI</p>
-            <img class="stack__box__icon" src="./src/img/icons/mui.svg" alt="mui icon">
-          </div>
-          <div class="stack__box" data-aos="fade-up">
             <p class="stack__box__title">Styled Components</p>
             <img class="stack__box__icon" src="./src/img/icons/styledcomponents.svg" alt="styled components icon">
           </div>
+          <div class="stack__box" data-aos="fade-up">
+            <p class="stack__box__title">React Router</p>
+            <img class="stack__box__icon" src="./src/img/icons/router.svg" alt="react router icon">
+          </div>
+          <div class="stack__box" data-aos="fade-down">
+            <p class="stack__box__title">SCSS</p>
+            <img class="stack__box__icon" src="./src/img/icons/sass.svg" alt="scss icon">
+          </div>
+          <div class="stack__box" data-aos="fade-up">
+            <p class="stack__box__title">CSS / CSS Modules</p>
+            <img class="stack__box__icon" src="./src/img/icons/css.svg" alt="css icon">
+          </div>
+          <div class="stack__box" data-aos="fade-down">
+            <p class="stack__box__title">HTML</p>
+            <img class="stack__box__icon" src="./src/img/icons/html5.svg" alt="html icon">
+          </div>
+
           <div class="stack__box" data-aos="fade-down">
             <p class="stack__box__title">ViteJS</p>
             <img class="stack__box__icon" src="./src/img/icons/vite.svg" alt="vite icon">
@@ -124,11 +137,33 @@
         <h2 class="projects__heading heading">Moje projekty</h2>
         <div class="projects__wrapper">
           <div class="projects__box">
+            <img src="./src/img/ToDoApp.png" alt="" class="projects__box__img">
+            <p class="projects__box__heading">ToDoApp React</p>
+            <p class="projects__box__subheading">Technologie</p>
+            <ul class="projects__box__stack">
+              <li class="projects__box__stack__item">Reaact</li>
+              <li class="projects__box__stack__item">Redux Toolkit</li>
+              <li class="projects__box__stack__item">CSS Modules/Styled Components</li>
+              <li class="projects__box__stack__item">Firebase</li>
+              <li class="projects__box__stack__item">ViteJS</li>
+            </ul>
+            <div class="projects__box__buttons">
+              <a href="https://reactdotoapp.netlify.app/" target="_blank">Live Demo</a>
+              <a href="https://github.com/a-brzezinski/ToDoApp-React" target="_blank">Source Code</a>
+            </div>
+          </div>
+          <div class="projects__box">
             <img src="./src/img/CountryInfoApp.png" alt="" class="projects__box__img">
             <p class="projects__box__heading">Country Info App</p>
-            <p class="projects__box__text">Aplikacja służąca do sprawdzania informacji o Państwach. Informacje są
-              pobierane z API RestCountries. Do budowy aplikacji zostały użyte technologie JavaScript, SCSS, HTML i
-              ViteJS</p>
+            <p class="projects__box__subheading">Technologie</p>
+            <ul class="projects__box__stack">
+              <li class="projects__box__stack__item">JavaScript</li>
+              <li class="projects__box__stack__item">RestAPI</li>
+              <li class="projects__box__stack__item">SCSS</li>
+              <li class="projects__box__stack__item">HTML</li>
+              <li class="projects__box__stack__item">ViteJS</li>
+            </ul>
+
             <div class="projects__box__buttons">
               <a href="https://country-info-app-api.netlify.app/" target="_blank">Live Demo</a>
               <a href="https://github.com/a-brzezinski/Country-Info-App" target="_blank">Source Code</a>
@@ -137,7 +172,13 @@
           <div class="projects__box">
             <img src="./src/img/PortfolioWebsite.png" alt="" class="projects__box__img">
             <p class="projects__box__heading">Portfolio Website</p>
-            <p class="projects__box__text">Strona na której jesteś😊 Przedstawiająca moje kompetencje.</p>
+            <p class="projects__box__subheading">Technologie</p>
+            <ul class="projects__box__stack">
+              <li class="projects__box__stack__item">JavaScript</li>
+              <li class="projects__box__stack__item">SCSS</li>
+              <li class="projects__box__stack__item">HTML</li>
+              <li class="projects__box__stack__item">ViteJS</li>
+            </ul>
             <div class="projects__box__buttons">
               <a href="https://github.com/a-brzezinski/PortfolioWebsite" target="_blank">Source Code</a>
             </div>
@@ -145,8 +186,13 @@
           <div class="projects__box">
             <img src="./src/img/VeroniWebsite.png" alt="" class="projects__box__img">
             <p class="projects__box__heading">Veroni Website</p>
-            <p class="projects__box__text">Strona fikcyjnej firmy ubezpieczeniowej. Została stworzona przy użyciu
-              JavaScript, HTML, SCSS i ViteJS</p>
+            <p class="projects__box__subheading">Technologie</p>
+            <ul class="projects__box__stack">
+              <li class="projects__box__stack__item">JavaScript</li>
+              <li class="projects__box__stack__item">SCSS</li>
+              <li class="projects__box__stack__item">HTML</li>
+              <li class="projects__box__stack__item">ViteJS</li>
+            </ul>
             <div class="projects__box__buttons">
               <a href="https://veroni-insurance.netlify.app/" target="_blank">Live Demo</a>
               <a href="https://github.com/a-brzezinski/Veroni-Insurance" target="_blank">Source Code</a>
@@ -157,8 +203,9 @@
       <section id="contact" class="contact">
         <h2 class="contact__heading heading">Kontakt</h2>
         <div class="contact__content">
-          <p class="contact__text">Aktualnie jestem zainteresowany podjęciem pracy jako Junior Frontend Developer.</p>
-          <p class="contact__text">Jestęm zainteresowany pracą stacjonarną w Warszawie jak i hybrydową lub zdalną.</p>
+          <p class="contact__text">Aktualnie jestem zainteresowany podjęciem pracy jako Junior Frontend (React)
+            Developer.</p>
+          <p class="contact__text">Jestem zainteresowany pracą stacjonarną w Warszawie jak i hybrydową lub zdalną.</p>
         </div>
         <div class="contact__box">
           <div class="contact__box__items">
